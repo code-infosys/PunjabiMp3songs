@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="PunjabiMp3songs.Main" %>
+
+<%@ Register Src="~/uc/HeaderAds.ascx" TagPrefix="uc1" TagName="HeaderAds" %>
+<%@ Register Src="~/uc/FooterAds.ascx" TagPrefix="uc1" TagName="FooterAds" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="canonical" href="http://www.punjabimp3songs.in/" />
+
+    <!-- Google fonts start -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <!-- Google fonts end -->
+
+    <meta name="google-site-verification" content="drM179t0sotluwkjqS4ZE40VA_0MOa5fxYXrq1FeodA" />
+    <meta name="alexaVerifyID" content="kvwQmaTNthB68JQ04ZnciqVlPjI" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="websiteWrapper landingWrapper">
+            <asp:Literal ID="litLogo" runat="server"></asp:Literal>
+
+            <!-- main menu wrapper starts -->
+            <ul class="mainMenuWrapper">
+                <li class="currentPage"><a href="http://www.punjabimp3songs.in/">Home</a></li>
+                <li><a href="/latest/single-tracks">Latest Single Tracks</a></li>
+                <li><a href="/latest/albums">Latest Albums</a></li>
+
+                <li><a href="/by-month/single-tracks">Single Tracks By Month</a> </li>
+                <li><a href="/top20/monthly/single-tracks">Top 20 Single Tracks Songs  </a></li>
+                <li><a href="/a-to-z/single-tracks">A-Z Single Tracks Albums</a></li>
+
+                <li><a href="/search">Search Song</a></li>
+                <li><a href="/song/upload">Upload Your Single Track</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
+            </ul>
+            <!-- main menu wrapper ends -->
+
+            <!-- header wrapper starts -->
+            <div class="headerOuterWrapper">
+                <div class="headerWrapper"><a href="#" class="mainMenuButton"><span>Menu</span></a></div>
+            </div>
+            <!-- header wrapper ends -->
+            <div class="pageWrapper singlePostPageWrapper">
+                <div class="singlePostContentWrapper">
+                    <%--<uc1:headerads runat="server" id="HeaderAds" />--%>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--<uc1:FooterAds runat="server" id="FooterAds" />--%>
+                </div>
+            </div>
+
+
+
+            <!-- footer wrapper starts -->
+            <div class="footerWrapper landingFooterWrapper">
+                <!-- footer logo starts -->
+
+                <a href="http://punjabimp3songs.in" class="footerLogo">
+
+                    <img src="<%=Page.ResolveUrl("~/Theme/images/common/footerLogo.png") %>" class="" alt="" /></a>
+                <!-- footer logo ends -->
+                <!-- footer social icons wrapper starts -->
+                <div class="footerSocialIconsWrapper">
+
+                    <a href="http://www.fb.com/mandeep.lkc" class="footerSocialIcon footerFacebookIcon"></a>
+                    <a href="https://twitter.com/mandeep_77" class="footerSocialIcon footerTwitterIcon"></a>
+                </div>
+                <!-- footer social icons wrapper ends -->
+            </div>
+
+            <div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- top -->
+                <ins class="adsbygoogle" style="display: inline-block; width: 728px; height: 90px" data-ad-client="ca-pub-8094071613477547" data-ad-slot="7670531113"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </div>
+
+            <!-- footer wrapper ends -->
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-50263303-1', 'punjabimp3songs.in');
+                ga('send', 'pageview');
+            </script>
+
+        </div>
+    </form>
+</body>
+</html>

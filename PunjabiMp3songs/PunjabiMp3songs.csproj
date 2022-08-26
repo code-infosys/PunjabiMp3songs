@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71B60640-4418-4654-B94D-E4FEC2E1C164}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PunjabiMp3songs</RootNamespace>
+    <AssemblyName>PunjabiMp3songs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SOFTWARE\Web Development soft\AjaxControlToolkit.Binary.NET4\AjaxControlToolkitSampleSite\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="StarMethods">
+      <HintPath>..\..\..\..\Process Work\punjabiMp3songs\StarMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for ASP.NET AJAX Q2 2012 SP2\Bin40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>C:\Program Files\Telerik\RadControls for ASP.NET AJAX Q2 2012 SP2\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404NotFound.aspx" />
+    <Content Include="apna.fm.png" />
+    <Content Include="AssignTop20.aspx" />
+    <Content Include="BackEndStar\Login.aspx" />
+    <Content Include="BackEndStar\t.aspx" />
+    <Content Include="BackEndStar\YouUpload.aspx" />
+    <Content Include="CloudApprove.aspx" />
+    <Content Include="css\default.css" />
+    <Content Include="css\uploadify.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="dewplayer.swf" />
+    <Content Include="FrontEndPages\AtoZTracks.aspx" />
+    <Content Include="FrontEndPages\ByMonthTracks.aspx" />
+    <Content Include="FrontEndPages\Contact.aspx" />
+    <Content Include="FrontEndPages\latestalb.aspx" />
+    <Content Include="FrontEndPages\latestalbDetail.aspx" />
+    <Content Include="FrontEndPages\LatestTracks.aspx" />
+    <Content Include="FrontEndPages\SearchBox.aspx" />
+    <Content Include="FrontEndPages\SongDetail.aspx" />
+    <Content Include="FrontEndPages\Top20MonthlyTracks.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="home.aspx" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\file-uploader-icon.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="MySongsList.aspx" />
+    <Content Include="ProfileUploader.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery.uploadify.js" />
+    <Content Include="scripts\uploader.swf" />
+    <Content Include="singletrack.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="SongUpload.aspx" />
+    <Content Include="swfobject.js" />
+    <Content Include="Theme\css\colorbox.css" />
+    <Content Include="Theme\css\custom.css" />
+    <Content Include="Theme\css\elements.css" />
+    <Content Include="Theme\css\framework.css" />
+    <Content Include="Theme\css\hidpi.css" />
+    <Content Include="Theme\css\responsive.css" />
+    <Content Include="Theme\css\skin.css" />
+    <Content Include="Theme\css\style.css" />
+    <Content Include="Theme\images\colorbox\controlsBg-x2.png" />
+    <Content Include="Theme\images\colorbox\controlsBg.png" />
+    <Content Include="Theme\images\colorbox\loading.gif" />
+    <Content Include="Theme\images\common\alertBoxButtonBg-x2.png" />
+    <Content Include="Theme\images\common\alertBoxButtonBg.png" />
+    <Content Include="Theme\images\common\alertBoxGoBg-x2.png" />
+    <Content Include="Theme\images\common\alertBoxGoBg.png" />
+    <Content Include="Theme\images\common\alertBoxInfoBg-x2.png" />
+    <Content Include="Theme\images\common\alertBoxInfoBg.png" />
+    <Content Include="Theme\images\common\alertBoxStopBg-x2.png" />
+    <Content Include="Theme\images\common\alertBoxStopBg.png" />
+    <Content Include="Theme\images\common\alertBoxWarningBg-x2.png" />
+    <Content Include="Theme\images\common\alertBoxWarningBg.png" />
+    <Content Include="Theme\images\common\commentAvatarBg.png" />
+    <Content Include="Theme\images\common\favicon.ico" />
+    <Content Include="Theme\images\common\footerDribbbleIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerDribbbleIconBg.png" />
+    <Content Include="Theme\images\common\footerFacebookIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerFacebookIconBg.png" />
+    <Content Include="Theme\images\common\footerFlickrIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerFlickrIconBg.png" />
+    <Content Include="Theme\images\common\footerLogo.png" />
+    <Content Include="Theme\images\common\footerRssIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerRssIconBg.png" />
+    <Content Include="Theme\images\common\footerTwitterIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerTwitterIconBg.png" />
+    <Content Include="Theme\images\common\footerVimeoIconBg-x2.png" />
+    <Content Include="Theme\images\common\footerVimeoIconBg.png" />
+    <Content Include="Theme\images\common\landingLogo.png" />
+    <Content Include="Theme\images\common\landingLogom.png" />
+    <Content Include="Theme\images\common\landingPageHighlightBg.png" />
+    <Content Include="Theme\images\common\loading.gif" />
+    <Content Include="Theme\images\common\mainMenuButtonBg-x2.png" />
+    <Content Include="Theme\images\common\mainMenuButtonBg.png" />
+    <Content Include="Theme\images\common\portfolioFilterableMenuDecoBg-x2.png" />
+    <Content Include="Theme\images\common\portfolioFilterableMenuDecoBg.png" />
+    <Content Include="Theme\images\common\quoteBg-x2.png" />
+    <Content Include="Theme\images\common\quoteBg.png" />
+    <Content Include="Theme\images\common\sliderArrowsBg-x2.png" />
+    <Content Include="Theme\images\common\sliderArrowsBg.png" />
+    <Content Include="Theme\images\common\sliderBorderBg-x2.png" />
+    <Content Include="Theme\images\common\sliderBorderBg.png" />
+    <Content Include="Theme\images\content\featured-place-1.jpg" />
+    <Content Include="Theme\images\content\featured-place-2.jpg" />
+    <Content Include="Theme\images\content\featured-place-3.jpg" />
+    <Content Include="Theme\images\content\featured-place-4.jpg" />
+    <Content Include="Theme\images\content\large-1.jpg" />
+    <Content Include="Theme\images\content\large-3.jpg" />
+    <Content Include="Theme\images\content\large-4.jpg" />
+    <Content Include="Theme\images\content\large-5.jpg" />
+    <Content Include="Theme\images\content\slide-1.jpg" />
+    <Content Include="Theme\images\content\slide-2.jpg" />
+    <Content Include="Theme\images\content\slide-3.jpg" />
+    <Content Include="Theme\images\content\small-1-1.jpg" />
+    <Content Include="Theme\images\content\small-1-2.jpg" />
+    <Content Include="Theme\images\content\small-1-3.jpg" />
+    <Content Include="Theme\images\content\small-1-4.jpg" />
+    <Content Include="Theme\images\content\small-1-5.jpg" />
+    <Content Include="Theme\images\content\small-1-6.jpg" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconArrowDownBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconAttachBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconBoltBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconCameraBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconCartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconChartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconCheckmarkBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconClockBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconCommentBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconDollarBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconFilesBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconFlagBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconGearBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconGlobeBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconHeartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconInfoBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconKeyBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconLinkBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconNoBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconRefreshBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconScreenBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconSearchBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconUserBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\1\iconWarningBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconArrowDownBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconAttachBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconBoltBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconCameraBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconCartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconChartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconCheckmarkBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconClockBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconCommentBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconDollarBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconFilesBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconFlagBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconGearBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconGlobeBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconHeartBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconInfoBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconKeyBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconLinkBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconNoBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconRefreshBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconScreenBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconSearchBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconUserBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\32\2\iconWarningBg32.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconArrowDownBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconAttachBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconBoltBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconCameraBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconCartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconChartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconCheckmarkBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconClockBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconCommentBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconDollarBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconFilesBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconFlagBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconGearBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconGlobeBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconHeartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconInfoBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconKeyBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconLinkBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconNoBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconRefreshBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconScreenBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconSearchBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconUserBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\1\iconWarningBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconArrowDownBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconAttachBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconBoltBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconCameraBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconCartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconChartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconCheckmarkBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconClockBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconCommentBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconDollarBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconFilesBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconFlagBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconGearBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconGlobeBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconHeartBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconInfoBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconKeyBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconLinkBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconNoBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconRefreshBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconScreenBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconSearchBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconUserBg64.png" />
+    <Content Include="Theme\images\icons\servicesIcons\64\2\iconWarningBg64.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconArrowLeftBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconArrowRightBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconBoltBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconCalendarBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconCameraBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconCheckmarkBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconCommentBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconDeleteBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconEditBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconEmailBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconExpandBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconFlagBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconGearBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconGraphBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconHomeBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconLocationBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconMinusBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconMobileBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconNoBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconPlusBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconRefreshBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconSearchBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconStarBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\1\iconTagBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconArrowLeftBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconArrowRightBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconBoltBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconCalendarBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconCameraBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconCheckmarkBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconCommentBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconDeleteBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconEditBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconEmailBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconExpandBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconFlagBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconGearBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconGraphBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconHomeBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconLocationBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconMinusBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconMobileBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconNoBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconPlusBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconRefreshBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconSearchBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconStarBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\16\2\iconTagBg16.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconArrowLeftBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconArrowRightBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconBoltBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconCalendarBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconCameraBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconCheckmarkBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconCommentBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconDeleteBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconEditBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconEmailBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconExpandBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconFlagBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconGearBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconGraphBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconHomeBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconLocationBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconMinusBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconMobileBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconNoBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconPlusBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconRefreshBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconSearchBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconStarBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\1\iconTagBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconArrowLeftBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconArrowRightBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconBoltBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconCalendarBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconCameraBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconCheckmarkBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconCommentBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconDeleteBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconEditBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconEmailBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconExpandBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconFlagBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconGearBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconGraphBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconHomeBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconLocationBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconMinusBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconMobileBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconNoBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconPlusBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconRefreshBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconSearchBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconStarBg32.png" />
+    <Content Include="Theme\images\icons\smallIcons\32\2\iconTagBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconDeviantArtBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconDribbbleBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconFacebookBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconFlickrBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconLinkedInBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconPicasaBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconRssBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconSkypeBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconTwitterBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconVimeoBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconWordPressBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\1\iconYouTubeBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconDeviantArtBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconDribbbleBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconFacebookBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconFlickrBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconLinkedInBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconPicasaBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconRssBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconSkypeBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconTwitterBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconVimeoBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconWordPressBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\16\2\iconYouTubeBg16.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconDeviantArtBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconDribbbleBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconFacebookBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconFlickrBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconLinkedInBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconPicasaBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconRssBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconSkypeBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconTwitterBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconVimeoBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconWordPressBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\1\iconYouTubeBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconDeviantArtBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconDribbbleBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconFacebookBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconFlickrBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconLinkedInBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconPicasaBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconRssBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconSkypeBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconTwitterBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconVimeoBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconWordPressBg32.png" />
+    <Content Include="Theme\images\icons\socialIcons\32\2\iconYouTubeBg32.png" />
+    <Content Include="Theme\images\skins\default\accordionButtonBg-x2.png" />
+    <Content Include="Theme\images\skins\default\accordionButtonBg.png" />
+    <Content Include="Theme\images\skins\default\portfolioDetailsButtonBg-x2.png" />
+    <Content Include="Theme\images\skins\default\portfolioDetailsButtonBg.png" />
+    <Content Include="Theme\images\skins\default\portfolioExpandButtonBg-x2.png" />
+    <Content Include="Theme\images\skins\default\portfolioExpandButtonBg.png" />
+    <Content Include="Theme\images\skins\default\smallPostReadMoreButtonBg-x2.png" />
+    <Content Include="Theme\images\skins\default\smallPostReadMoreButtonBg.png" />
+    <Content Include="Theme\js\contact.js" />
+    <Content Include="Theme\js\custom.js" />
+    <Content Include="Theme\js\effects.jquery-ui.min.js" />
+    <Content Include="Theme\js\jquery.colorbox.min.js" />
+    <Content Include="Theme\js\jquery.min.js" />
+    <Content Include="Theme\js\jquery.nivo-slider.min.js" />
+    <Content Include="uc\FooterAds.ascx" />
+    <Content Include="uc\HeaderAds.ascx" />
+    <Content Include="userimg\Canvas-HD-816032014120308.jpg" />
+    <Content Include="userimg\IMG_20131125_14322714092014060910.jpg" />
+    <Content Include="userimg\lshop.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404NotFound.aspx.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404NotFound.aspx.designer.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUUp.Master.cs">
+      <DependentUpon>AdminUUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUUp.Master.designer.cs">
+      <DependentUpon>AdminUUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTop20.aspx.cs">
+      <DependentUpon>AssignTop20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignTop20.aspx.designer.cs">
+      <DependentUpon>AssignTop20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\t.aspx.cs">
+      <DependentUpon>t.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\t.aspx.designer.cs">
+      <DependentUpon>t.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\YouUpload.aspx.cs">
+      <DependentUpon>YouUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\YouUpload.aspx.designer.cs">
+      <DependentUpon>YouUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloudApprove.aspx.cs">
+      <DependentUpon>CloudApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloudApprove.aspx.designer.cs">
+      <DependentUpon>CloudApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\AtoZTracks.aspx.cs">
+      <DependentUpon>AtoZTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\AtoZTracks.aspx.designer.cs">
+      <DependentUpon>AtoZTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\ByMonthTracks.aspx.cs">
+      <DependentUpon>ByMonthTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\ByMonthTracks.aspx.designer.cs">
+      <DependentUpon>ByMonthTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\latestalb.aspx.cs">
+      <DependentUpon>latestalb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\latestalb.aspx.designer.cs">
+      <DependentUpon>latestalb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\latestalbDetail.aspx.cs">
+      <DependentUpon>latestalbDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\latestalbDetail.aspx.designer.cs">
+      <DependentUpon>latestalbDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\LatestTracks.aspx.cs">
+      <DependentUpon>LatestTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\LatestTracks.aspx.designer.cs">
+      <DependentUpon>LatestTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\SearchBox.aspx.cs">
+      <DependentUpon>SearchBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\SearchBox.aspx.designer.cs">
+      <DependentUpon>SearchBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\SongDetail.aspx.cs">
+      <DependentUpon>SongDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\SongDetail.aspx.designer.cs">
+      <DependentUpon>SongDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20MonthlyTracks.aspx.cs">
+      <DependentUpon>Top20MonthlyTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20MonthlyTracks.aspx.designer.cs">
+      <DependentUpon>Top20MonthlyTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MySongsList.aspx.cs">
+      <DependentUpon>MySongsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MySongsList.aspx.designer.cs">
+      <DependentUpon>MySongsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileUploader.aspx.cs">
+      <DependentUpon>ProfileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileUploader.aspx.designer.cs">
+      <DependentUpon>ProfileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="singletrack.aspx.cs">
+      <DependentUpon>singletrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="singletrack.aspx.designer.cs">
+      <DependentUpon>singletrack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SongUpload.aspx.cs">
+      <DependentUpon>SongUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SongUpload.aspx.designer.cs">
+      <DependentUpon>SongUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\FooterAds.ascx.cs">
+      <DependentUpon>FooterAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\FooterAds.ascx.designer.cs">
+      <DependentUpon>FooterAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\HeaderAds.ascx.cs">
+      <DependentUpon>HeaderAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\HeaderAds.ascx.designer.cs">
+      <DependentUpon>HeaderAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wapcode\Datastar.cs" />
+    <Compile Include="wapcode\MSContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="wapcode\StarExtension.cs" />
+    <Compile Include="wapcode\StarMethods.cs" />
+    <Compile Include="wapcode\validData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\uploader.fla" />
+    <Content Include="AdminUUp.Master" />
+    <Content Include="Main.Master" />
+    <Content Include="wapcode\MSContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MSContext.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>PunjabiMp3songs</CustomToolNamespace>
+    </Content>
+    <None Include="Properties\PublishProfiles\Mp3songs.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wapcode\MSContext.dbml.layout">
+      <DependentUpon>MSContext.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadsIm\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1207/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

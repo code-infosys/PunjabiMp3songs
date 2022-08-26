@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminUUp.master.cs" Inherits="PunjabiMp3songs.AdminUUp" %>
+
+<%@ Register Src="~/uc/HeaderAds.ascx" TagPrefix="uc1" TagName="HeaderAds" %>
+<%@ Register Src="~/uc/FooterAds.ascx" TagPrefix="uc1" TagName="FooterAds" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> </title>
+    
+    <link href="../css/default.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <center> <img alt="jatt" src="images/mp3logo.png" /></center>
+              <hr />
+            <div class="head"> 
+              Hi: <%=Session["USERDANAME"].ToString() %> | <a href="/Dashboard">DashBoard</a> | <a href="/addsong">Add Album </a> | <a href="/singletrack">Add Single Track </a> | <a href="/MyUploadsList">My Songs List</a> |  <a href="/AssignTop20">To 20 Songs List</a> |<a href="/MyProfile">My Profile</a> 
+               |<a href="CloudApprove.aspx">Song Approve</a> | <asp:LinkButton runat="server" ID="lbtnLogout" OnClick="lbtnLogout_Click" Text="Logout"></asp:LinkButton>
+            </div>
+
+            <%--<uc1:HeaderAds runat="server" ID="HeaderAds" />--%>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--<uc1:FooterAds runat="server" ID="FooterAds" />--%>
+
+            <br />
+            <hr />
+
+            <div class="head"><a href="http://punjabimp3songs.in">Home</a></div>
+
+            <br />
+
+            <div class="foottext">©2006-14 PunjabiMp3songs</div>
+
+        </div>
+    </form>
+</body>
+</html>
